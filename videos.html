@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta http-equiv="Content-Language" content="fr" />
+ <link rel="stylesheet" href="main.css" />
+ <meta name="author" content="Loher" />
+ <script type="text/javascript" src="js/jquery.js"></script>
+
+ <title>
+  Skate In Lorient
+ </title>
+</head>
+
+<body>
+
+
+<table class="tableContainer">
+	<tr>
+		<td>
+			<img src="img/logoSila.png" class="logoSila" alt="SILA" />
+		</td>
+		<td>
+			<h1>Skate In Lorient</h1>
+		</td>
+		<td>
+			<img src="img/logoEsf.png" class="logoEsf" alt="SILA" />
+		</td>
+	</tr>
+</table>
+
+
+<table class="tableContainer">
+	<tr>
+		<td>
+			<div class="menuContainer">
+				<a href="index.html"><p>Accueil</p></a>
+			</div>
+		</td>
+		
+		<td>
+			<div class="menuContainer">
+				<a href="bureau.html"><p>Le Bureau</p></a>
+			</div>
+		</td>
+		
+		<td>
+			<div class="menuContainer">
+				<a href="cours.html"><p>Les Cours</p></a>
+			</div>
+		</td>
+				
+		<td>
+			<div class="menuContainer">
+				<a href="http://www.flickr.com/photos/skateinlorient/" target="_blank"><p>Photos</p></a>
+			</div>
+		</td>
+				<td>
+			<div class="menuContainer">
+				<a href="videos.html"><p>Vidéos</p></a>
+			</div>
+		</td>
+	</tr>
+</table>
+
+
+
+<table class="tableContainer">
+
+  <tr>
+ <td valign="top">
+ 
+ 	<div id ="mainBlock"> 
+		<h2>Videos</h2>
+		<p id="videoTitle">Slowmotion</p>	
+		
+		<div id="videoContainer">
+			<object type="text/html" id="lecteur" data="http://www.youtube.com/embed/SAEHS8IDJj4" style="width:640px;height:385px;"></object>
+		</div>
+		
+		<table id="linkVideoContainer">
+			<tr>
+				<td><li class="videoLink" video="http://www.youtube.com/embed/YbV_KGHQ22M" title="Start">Start</li></td>
+				<td><li class="videoLink" video="http://www.youtube.com/embed/SAEHS8IDJj4" title="Slowmotion">Slowmotion</li></td>
+				<td><li class="videoLink" video="http://www.youtube.com/embed/PsQKzIKiItM" title="Rennes">Rennes</li></td>
+			</tr>
+			
+			<tr>
+				<td><li class="videoLink" video="http://www.youtube.com/embed/8valp9x1Qmw" title="Pulsion">Pulsion</li></td>
+				<td><li class="videoLink" video="http://www.youtube.com/embed/qnZPgp1hF1Y" title="Next">Next</li></td>
+				<td><li class="videoLink" video="http://www.youtube.com/embed/FuNM0rNZROY" title="Let's Move">Let's Move</li></td>
+			</tr>
+			
+			<tr>
+				<td><li class="videoLink" video="http://www.youtube.com/embed/v5Fb7ZUMBd4" title="Last">Last</li></td>
+				<td><li class="videoLink" video="http://www.youtube.com/embed/4QPTHGHROrI" title="Keryado Addict">Keriado Addict</li></td>
+				<td><li class="videoLink" video="http://www.youtube.com/embed/5h4DyMF0ve4" title="Kameha Free Skate Challenge">Kameha Free Skate Challenge</li></td>
+			</tr>
+			
+			<tr>
+				<td><li class="videoLink" video="http://www.youtube.com/embed/Rba5ZpEI9_E" title="Immagination">Immagination</li></td>
+				<td><li class="videoLink" video="http://www.youtube.com/embed/_001Nb-GgMo" title="Illogique">Illogique</li></td>
+				<td><li class="videoLink" video="http://www.youtube.com/embed/0Ea1jd2bayQ" title="Hey Johnny!">Hey Johnny!</li></td>
+			</tr>
+			
+			<tr>
+				<td><li class="videoLink" video="http://www.youtube.com/embed/wQLgzCoTMRw" title="Ghetto Park">Ghetto Park</li></td>
+				<td><li class="videoLink" video="http://www.youtube.com/embed/Im01DMqV6ig" title="Experiences">Experiences</li></td>
+				<td><li class="videoLink" video="http://www.youtube.com/embed/kdsOcOAVFyU" title="Boring">Boring</li></td>
+			</tr>
+			
+			<tr>
+				<td><li class="videoLink" video="http://www.youtube.com/embed/vYPKIcrmRog" title="Alive">Alive</li></td>
+				<td><li class="videoLink" video="http://www.youtube.com/embed/uQAAPk5BSME" title="Again">Again</li></td>
+			</tr>
+		</table>
+
+		
+	</div>
+ 
+ 
+</td>
+
+<script type="text/javascript">
+	$('.videoLink').click(function(event){
+		var src = event.currentTarget.attributes[1].nodeValue;
+		var title = event.currentTarget.attributes[2].nodeValue;
+		
+		$("#videoTitle").text(title);
+		
+		//Suppression du lecteur
+		var videoContainer = document.getElementById('videoContainer');
+		videoContainer.removeChild(document.getElementById('lecteur'));
+		
+		//Ajout du nouveau lecteur
+		var lecteur = document.createElement('object');
+		lecteur.setAttribute('type', 'text/html');
+		lecteur.setAttribute('data', src);
+		lecteur.setAttribute('style', 'width:640px;height:385px;');
+		lecteur.setAttribute('id', 'lecteur');
+		videoContainer.appendChild(lecteur);
+	});
+</script>
+
+
+
+ <td valign="top">
+
+	<div id="contact">
+	 <h2>Contact</h2>
+	 <p>Skate In Lorient Assos</p>
+	 <p>32 Boulevard Svob - 56100 Lorient</p>
+	 <p></p>
+	 <p>skate.inlorient@laposte.net</p>
+	 <p>François - 06 03 03 18 21</p>
+	 <p></p>
+	 <p>Steve - 06 81 21 89 61</p>
+	 <p></p>
+	 <a href="https://www.facebook.com/pages/Skate-In-Lorient/431589486915091?ref=hl" target="_blank"><img src="img/facebook.png" alt="Facebook" /></a>
+	</div>
+
+</td>
+
+  </tr>
+</table>
+
+
+<hr />
+<p id="footer">Alexandre & Francois Cordporation, 2005 All Rights Reserved - By
+	<a href="http://www.nerdesign.fr">Nerdesign</a> - 2013
+</p>
+
+</body>
+</html>

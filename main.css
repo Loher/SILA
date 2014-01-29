@@ -1,0 +1,121 @@
+/*FOOTER*/
+
+#footer{
+	color: #183152;	
+}
+
+/*MENU*/
+.menuContainer{
+	background: #000000;
+	text-align: center;
+	width: 120px;
+}
+
+.menuContainer:hover{
+	background: #555678;
+}
+
+/*BODY*/
+body{
+	background: #C4D7ED;	
+}
+
+#mainBlock{
+	/*background: #375D81;*/
+	background: #000000;
+	width: 750px;
+	margin-left: auto;
+	margin-right: auto;	
+	text-align: center;
+}
+
+#contact{
+	/*background: #375D81;*/
+	background: #000000;
+	width: 280px;
+	height: 350px;
+	margin-left: auto;
+	margin-right: auto;	
+	text-align: center;
+}
+
+.tableContainer{
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+.avatar{
+	width: 300px;
+	height: 300px;	
+}
+
+.identite{
+	width: 150px;
+	height: 150px;	
+}
+
+#linkVideoContainer{
+	width:600px;
+	margin-right: auto;
+	margin-left: auto;	
+	margin-top: 30px;
+}
+
+.videoLink{
+	cursor: pointer;	
+}
+/*POLICE*/
+@font-face {
+    font-family: "titleFont";
+    src: url('polices/sketchoutSW.ttf');
+}
+
+
+/*LOGOS*/
+.logoEsf{
+	width: 200px;
+	height: 200px;	
+}
+
+.logoSila{
+	width:250px;	
+	height: 200px;
+}
+
+
+/*GENERIQUES*/
+h1{
+	text-align: center;
+	color: #183152;
+	font-size: 4em;
+	font-family: "titleFont";
+}
+
+h2{
+	text-align: center;
+	color: white;
+	font-family: "titleFont";
+	font-size: 2em;
+}
+
+p{
+	color: white;
+	font-family: "courier";	
+	
+}
+
+a:link{
+	text-decoration:none;	
+}
+
+li{
+	color: white;
+	font-family: "courier";
+	text-align: left;	
+	font-size: 0.8em;
+}
+
+.pAlignLeft{
+	text-align: left;
+	margin-left: 15px;	
+}
