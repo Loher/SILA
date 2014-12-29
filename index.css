@@ -1,0 +1,132 @@
+#bloc_page
+{
+    width: 900px;
+    margin: auto;
+}
+
+body{
+	background-image:-moz-linear-gradient(30deg, white, black);
+	background-image:-webkit-linear-gradient(30deg, white, black);
+	background-image:-o-linear-gradient(30deg, white, black);
+	background-image:linear-gradient(60deg, white, black);
+}
+
+img {
+	
+	vertical-align:middle;
+	
+}
+
+p{
+	font-family: ASafePlacetoFall;	
+}
+
+a{
+	font-family: ASafePlacetoFall;		
+}
+
+h2{
+	font-family: ASafePlacetoFall;		
+}
+
+h1{
+	font-family: ASafePlacetoFall;		
+}
+
+
+/* Navigation */
+
+nav
+{
+    display: inline-block;
+    width: 740px;
+    text-align: center;
+}
+
+nav ul
+{
+    list-style-type: none;
+}
+
+nav li
+{
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav a
+{
+    font-size: 1.3em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: #760001;
+    border-bottom: 3px solid #760001;
+}
+
+/* Bannière */
+#banniere_image
+{
+    margin-top: 15px;
+    height: 200px;
+    border-radius: 5px;
+    background: url('images/ban.png') no-repeat;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+    margin-bottom: 25px;
+ 
+}
+
+
+/*content*/
+
+#profs{
+	align: center;	
+}
+
+#right
+{
+	width:200px;
+	margin-top:20px;
+	border:2px solid black;
+	border-radius:20px;
+	background-image: url(img/background5.png);
+	text-align:center;
+	color:#FFFFFF;
+}
+
+#right2
+{
+	width:200px;
+	margin-top:20px;
+
+}
+
+#left
+{
+	width:700px;	
+	background-image: url(img/background5.png);
+	margin-top:20px;
+	margin-right:15px;
+	text-align:center;
+	border-radius:20px;
+	color:#FFFFFF;
+}
+	
+	
+/*Bas de page*/
+#nerdesign{
+	color: #FFFFFF;
+}
+	
+	
+	
+	
+	
+	
+	
+

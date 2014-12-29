@@ -51,7 +51,7 @@ body{
 
 .identite{
 	width: 150px;
-	height: 150px;	
+	height: 190px;	
 }
 
 #linkVideoContainer{
@@ -118,4 +118,46 @@ li{
 .pAlignLeft{
 	text-align: left;
 	margin-left: 15px;	
+}
+
+
+/*ADMINISTRATION*/
+.adminContainer{
+	margin-left: 30px;	
+}
+
+.adminContainer h2{
+	color: black;
+	font-family: Regular;
+	text-align: left;
+}
+
+.adminContainer p{
+	color: black;
+	font-family: Regular;
+	text-align: left;
+}
+
+
+/*LOGIN*/
+
+.loginContainer{
+	width: 280px;
+	height: 150px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 100px;
+}
+
+.loginFieldContainer{
+	padding: 15px;
+}
+
+.firstField{
+	margin-left: 23px;
+}
+
+.submitButton{
+	float: right;
+	margin-right: 75px;
 }
